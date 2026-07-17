@@ -4,10 +4,10 @@
 all: build run
 
 build:
-	nlc src/*.nl -o nl_modules
+	nlc src/ -o nl_modules
 
 run:
-	nlvm nl_modules/*.nlm
+	nlvm nl_modules/
 
 clean:
 	rm -rf nl_modules/
