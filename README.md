@@ -20,10 +20,12 @@ NN_name/
 | [01_hello_world](01_hello_world/) | Hello world | Minimal single-file program, `system.Out.print` |
 | [02_shapes](02_shapes/) | Shapes | Multi-file program: abstract classes, inheritance across files, `Stringable`, generics (`system.List<T>`), exceptions |
 
-## Building the binaries
+## Running a demo
 
-Demos assume `nlc`/`nlvm` are built in release mode from a sibling `nlvm` checkout:
 
 ```shell
-cd /data/projects/nlvm && cargo build --release
+cd 02_shapes
+make
 ```
+
+It assumes `nlc`/`nlvm` are built and available.

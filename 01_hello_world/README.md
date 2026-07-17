@@ -1,13 +1,10 @@
 # Simple Hello World
 
-Compile
+A minimal single-file program, using `system.Out.print`.
 
 ```shell
-/data/projects/nlvm/target/release/nlc src/Main.nl -o nl_modules
-```
-
-Execute
-
-```shell
-/data/projects/nlvm/target/release/nlvm nl_modules/main.Main.nlm
+make
+make build  # build only
+make run    # run only
+make clean 	# delete nl_modules/
 ```

@@ -13,18 +13,19 @@ subclasses (one of them extending another), a generic `system.List<Shape>`,
   `IllegalArgumentException` thrown by an invalid constructor, then iterates
   the list with a `for (const auto s : list)` loop.
 
-Compile (all sources are compiled together as one program; `nlc` emits one
-`.nlm` per class, including the prelude exception hierarchy, into `nl_modules`):
+All sources are compiled together as one program; `nlc` emits
+one `.nlm` per class, including the prelude exception hierarchy, into
+`nl_modules`:
 
 ```shell
-/data/projects/nlvm/target/release/nlc src/Shape.nl src/Circle.nl src/Rectangle.nl src/Square.nl src/Main.nl -o nl_modules
+nlc src/*.nl -o nl_modules
 ```
 
-Execute (`nlvm` needs every `.nlm` the program can reach at runtime, not just
-the entry point — pass the whole directory):
+`nlvm` needs every `.nlm` the program can reach at runtime, not just the
+entry point — pass the whole directory:
 
 ```shell
-/data/projects/nlvm/target/release/nlvm nl_modules/*.nlm
+nlvm nl_modules/*.nlm
 ```
 
 Expected output:
