@@ -12,6 +12,9 @@ class Main {
 		}
 		catch (IllegalArgumentException e) {
 			system.Out.print("Rejected invalid shape: " + e.message + "\n");
+			for (const auto frame : e.stackTrace) {
+				system.Out.print("  at " + frame.file + ":" + frame.line + "\n");
+			}
 		}
 
 		float totalArea = 0.0;

@@ -18,9 +18,10 @@ NN_name/
 | # | Name | Demonstrates |
 |---|------|--------------|
 | [01_hello_world](01_hello_world/) | Hello world | Minimal single-file program, `system.Out.print` |
-| [02_shapes](02_shapes/) | Shapes | Multi-file program: abstract classes, inheritance across files, `Stringable`, generics (`system.List<T>`), exceptions |
+| [02_shapes](02_shapes/) | Shapes | Multi-file program: abstract classes, inheritance across files, `Stringable`, generics (`system.List<T>`), exceptions with stack traces |
 | [03_store](03_store/) | Store | Multiple namespaces ("workspaces") in separate folders, cross-namespace `use` imports, exceptions across namespaces |
-| [04_scoreboard](04_scoreboard/) | Scoreboard | Closures/anonymous functions, built-in array methods (`filter`/`sort`/`forEach`/`map`), exhaustive `match` expressions |
+| [04_scoreboard](04_scoreboard/) | Scoreboard | Closures/anonymous functions, built-in array methods (`filter`/`sort`/`forEach`/`map`/`find`), exhaustive `match` expressions, `??` coalescing |
+| [05_priority](05_priority/) | Priority | Typed `enum` with custom instance methods, `from`/`tryFrom`, `??` fallback on parse failure |
 
 ## Running a demo
 

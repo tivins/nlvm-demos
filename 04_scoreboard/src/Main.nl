@@ -13,6 +13,11 @@ class Main {
 		system.Out.println("Passing scores (highest first):");
 		passingScores.forEach((int s) => { system.Out.println("  " + s); });
 
+		auto firstFailing = scores.find((int s) => s < 60);
+		int failingScore = firstFailing ?? -1;
+		system.Out.println("");
+		system.Out.println("First failing score: " + failingScore);
+
 		int[] curved = scores.map((int s) => s + 5);
 
 		system.Out.println("");
