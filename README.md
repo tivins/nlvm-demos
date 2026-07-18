@@ -20,6 +20,7 @@ NN_name/
 | [01_hello_world](01_hello_world/) | Hello world | Minimal single-file program, `system.Out.print` |
 | [02_shapes](02_shapes/) | Shapes | Multi-file program: abstract classes, inheritance across files, `Stringable`, generics (`system.List<T>`), exceptions |
 | [03_store](03_store/) | Store | Multiple namespaces ("workspaces") in separate folders, cross-namespace `use` imports, exceptions across namespaces |
+| [04_scoreboard](04_scoreboard/) | Scoreboard | Closures/anonymous functions, built-in array methods (`filter`/`sort`/`forEach`/`map`), exhaustive `match` expressions |
 
 ## Running a demo
 

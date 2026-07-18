@@ -18,14 +18,14 @@ one `.nlm` per class, including the prelude exception hierarchy, into
 `nl_modules`:
 
 ```shell
-nlc src/*.nl -o nl_modules
+nlc src/ -o nl_modules
 ```
 
 `nlvm` needs every `.nlm` the program can reach at runtime, not just the
 entry point — pass the whole directory:
 
 ```shell
-nlvm nl_modules/*.nlm
+nlvm nl_modules/
 ```
 
 Expected output:
