@@ -6,3 +6,4 @@ all:
 	cd 03_store && make
 	cd 04_scoreboard && make
 	cd 05_priority && make
+	cd 06_http_server && make

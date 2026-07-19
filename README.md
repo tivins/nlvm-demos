@@ -22,6 +22,7 @@ NN_name/
 | [03_store](03_store/) | Store | Multiple namespaces ("workspaces") in separate folders, cross-namespace `use` imports, exceptions across namespaces |
 | [04_scoreboard](04_scoreboard/) | Scoreboard | Closures/anonymous functions, built-in array methods (`filter`/`sort`/`forEach`/`map`/`find`), exhaustive `match` expressions, `??` coalescing |
 | [05_priority](05_priority/) | Priority | Typed `enum` with custom instance methods, `from`/`tryFrom`, `??` fallback on parse failure |
+| [06_http_server](06_http_server/) | HTTP server | `system.net.TcpListener`/`TcpStream`, one `system.thread.Thread` per connection, `system.thread.Mutex`-guarded shared state, serves a static `index.html`/`style.css`/`script.js` page |
 
 ## Running a demo
 

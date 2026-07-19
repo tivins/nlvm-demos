@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NL Multi-thread HTTP Server</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<main class="page">
+	<header class="page__header">
+		<p class="eyebrow">system.net.TcpListener + system.thread.Thread</p>
+		<h1>Multi-thread HTTP server</h1>
+		<p class="lede">
+			This page, <code>style.css</code> and <code>script.js</code> are served by a tiny
+			HTTP server written in <a href="https://github.com/tivins/nlvm-specs">NL</a>. Each
+			connection is accepted on the main thread and handed off to its own
+			<code>system.thread.Thread</code>, so requests are handled in parallel — not
+			queued behind one another.
+		</p>
+	</header>
+
+	<section class="cards">
+		<article class="card">
+			<h2>Live request count</h2>
+			<p class="stat" id="requestCount">–</p>
+			<p class="hint">Total requests served since the server started, updated every second via <code>/api/stats</code>.</p>
+		</article>
+
+		<article class="card">
+			<h2>Parallelism check</h2>
+			<p class="hint">
+				Fires 5 concurrent requests at <code>/api/work</code>, an endpoint that sleeps
+				600&nbsp;ms per request. On a single-threaded server this would take ~3s; here
+				it finishes in ~600&nbsp;ms because every request runs on its own thread.
+			</p>
+			<button id="runWork" type="button">Fire 5 parallel requests</button>
+			<p class="stat" id="workElapsed">–</p>
+			<ul class="worker-list" id="workerList"></ul>
+		</article>
+	</section>
+
+	<footer class="page__footer">
+		<p>Source: <code>06_http_server</code> in <a href="https://github.com/tivins/nlvm-demos">nlvm-demos</a>.</p>
+	</footer>
+</main>
+<script src="/script.js"></script>
+</body>
+</html>
