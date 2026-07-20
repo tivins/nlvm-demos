@@ -31,7 +31,7 @@ concrete subclass it's holding — that's substitutability.
 
 ## Why this is Liskov, concretely
 
-Per [compiler.md § Exception inheritance rules](https://github.com/tivins/nlvm-specs/blob/main/docs/compiler.md#exception-inheritance-rules),
+Per [compiler.md § Exception inheritance rules](https://github.com/nlvm-lang/nlvm-specs/blob/main/docs/compiler.md#exception-inheritance-rules),
 an overriding method's `throws` clause must, for every *checked* exception
 `E` declared by the parent, declare `E` or a subclass of `E` — and may not
 declare any checked exception outside that. In other words: a subclass is
@@ -42,7 +42,7 @@ at compile time instead of left to code review.
 
 Two ways to break it, both rejected by `nlc` (not part of the buildable
 demo — these are shown here as illustrations, matching
-[specs.md § Exception inheritance rules](https://github.com/tivins/nlvm-specs/blob/main/docs/specs.md#exception-inheritance-rules)):
+[specs.md § Exception inheritance rules](https://github.com/nlvm-lang/nlvm-specs/blob/main/docs/specs.md#exception-inheritance-rules)):
 
 ```nl
 // E016 — widening: dropping ImportException from the throws clause (Exception

@@ -20,7 +20,7 @@ nlc src/ -o output.nlp
 nlvm output.nlp
 ```
 
-> Note: per [specs.md § Anonymous Functions](https://github.com/tivins/nlvm-specs/blob/main/docs/specs.md#anonymous-functions),
+> Note: per [specs.md § Anonymous Functions](https://github.com/nlvm-lang/nlvm-specs/blob/main/docs/specs.md#anonymous-functions),
 > captured variables are documented as captured *by reference* and mutable
 > (`counter++` inside a closure). The current `nlc`/`nlvm` implementation
 > instead captures **by value** — a snapshot taken when the closure is

@@ -13,7 +13,7 @@ subclasses (one of them extending another), a generic `system.List<Shape>`,
   `IllegalArgumentException` thrown by an invalid constructor, and prints
   its `e.stackTrace` (an `ExecutionPoint[]` with `file`/`line` per frame,
   captured by the VM when the exception's `construct` runs — see
-  [specs.md § Exceptions](https://github.com/tivins/nlvm-specs/blob/main/docs/specs.md#exceptions))
+  [specs.md § Exceptions](https://github.com/nlvm-lang/nlvm-specs/blob/main/docs/specs.md#exceptions))
   before iterating the list with a `for (const auto s : list)` loop.
 
 All sources are compiled together as one program; `nlc` bundles every

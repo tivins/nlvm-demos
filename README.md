@@ -1,8 +1,8 @@
 # NL demos
 
-Small, runnable example programs written in [NL](https://github.com/tivins/nlvm-specs),
+Small, runnable example programs written in [NL](https://specs.nlvm.dev),
 compiled and executed with the `nlc`/`nlvm` binaries from
-[`nlvm`](https://github.com/tivins/nlvm).
+[`nlvm`](https://github.com/nlvm-lang/nlvm).
 
 Each demo is a self-contained directory:
 

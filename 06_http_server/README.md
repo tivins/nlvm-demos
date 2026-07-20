@@ -9,7 +9,7 @@ actually handled in parallel instead of being queued behind one another.
   `system.thread.Mutex` since the same `Server` instance is shared across
   every worker thread (heap objects, including the object a closure
   captures, are shared across threads — see
-  [vm.md § Threading model](https://github.com/tivins/nlvm-specs/blob/main/docs/vm.md#threading-model)).
+  [vm.md § Threading model](https://github.com/nlvm-lang/nlvm-specs/blob/main/docs/vm.md#threading-model)).
   `handle()` reads the request line off a `system.net.TcpStream`, routes it
   against a small whitelist (`resolveFile()` — only `/`, `/index.html`,
   `/style.css` and `/script.js` ever reach the filesystem, so a

@@ -14,7 +14,7 @@ across namespace boundaries via `use` imports.
 - `src/app/` (namespace `app`) — `Main`, which imports classes from all
   three other namespaces and wires them together.
 
-Per [specs.md § Source code files](https://github.com/tivins/nlvm-specs/blob/main/docs/specs.md#source-code-files),
+Per [specs.md § Source code files](https://github.com/nlvm-lang/nlvm-specs/blob/main/docs/specs.md#source-code-files),
 the namespace declared in each file must match its folder path — that's
 what makes each folder a distinct "workspace" here, even though `nlc`
 compiles everything into one program in a single invocation:

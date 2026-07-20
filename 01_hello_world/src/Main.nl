@@ -1,7 +1,7 @@
 //------------------------------------------------
 // NLVM Demo
-// Specs: https://github.com/tivins/nlvm-specs
-// Implementation: https://github.com/tivins/nlvm
+// Specs: https://specs.nlvm.dev
+// Implementation: https://github.com/nlvm-lang/nlvm
 //------------------------------------------------
 // Demo 01: Hello World
 //------------------------------------------------
