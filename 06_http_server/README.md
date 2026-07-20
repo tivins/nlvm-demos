@@ -32,8 +32,8 @@ actually handled in parallel instead of being queued behind one another.
   are sleeping at the same time instead of one thread sleeping five times.
 
 ```shell
-make build   # nlc src/httpserver/ -o nl_modules
-make run     # nlvm nl_modules/  — blocks; open http://127.0.0.1:8090, Ctrl+C to stop
+make build   # nlc src/httpserver/ -o output.nlp
+make run     # nlvm output.nlp  — blocks; open http://127.0.0.1:8090, Ctrl+C to stop
 ```
 
 > Note: unlike the other demos, `make` (`all`) only **builds** here — it

@@ -16,8 +16,8 @@ used by the earlier demos.
   value domain is unbounded).
 
 ```shell
-nlc src/ -o nl_modules
-nlvm nl_modules/
+nlc src/ -o output.nlp
+nlvm output.nlp
 ```
 
 > Note: per [specs.md § Anonymous Functions](https://github.com/tivins/nlvm-specs/blob/main/docs/specs.md#anonymous-functions),

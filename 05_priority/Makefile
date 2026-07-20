@@ -3,10 +3,10 @@
 all: build run
 
 build:
-	nlc src/ -o nl_modules
+	nlc src/ -o output.nlp
 
 run:
-	nlvm nl_modules/
+	nlvm output.nlp
 
 clean:
-	rm -rf nl_modules/
+	rm -f output.nlp

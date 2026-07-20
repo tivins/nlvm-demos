@@ -7,3 +7,4 @@ all:
 	cd 04_scoreboard && make
 	cd 05_priority && make
 	cd 06_http_server && make
+	cd 07_liskov && make

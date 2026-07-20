@@ -24,8 +24,8 @@ default case.
   instead of throwing.
 
 ```shell
-nlc src/ -o nl_modules
-nlvm nl_modules/
+nlc src/ -o output.nlp
+nlvm output.nlp
 ```
 
 Expected output:

@@ -6,5 +6,5 @@ A minimal single-file program, using `system.Out.print`.
 make
 make build  # build only
 make run    # run only
-make clean 	# delete nl_modules/
+make clean 	# delete output.nlp
 ```

@@ -6,10 +6,10 @@
 all: build
 
 build:
-	nlc src/httpserver/ -o nl_modules
+	nlc src/httpserver/ -o output.nlp
 
 run:
-	nlvm nl_modules/
+	nlvm output.nlp
 
 clean:
-	rm -rf nl_modules/
+	rm -f output.nlp

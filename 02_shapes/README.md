@@ -16,19 +16,18 @@ subclasses (one of them extending another), a generic `system.List<Shape>`,
   [specs.md § Exceptions](https://github.com/tivins/nlvm-specs/blob/main/docs/specs.md#exceptions))
   before iterating the list with a `for (const auto s : list)` loop.
 
-All sources are compiled together as one program; `nlc` emits
-one `.nlm` per class, including the prelude exception hierarchy, into
-`nl_modules`:
+All sources are compiled together as one program; `nlc` bundles every
+class, including the prelude exception hierarchy, into a single
+`output.nlp`:
 
 ```shell
-nlc src/ -o nl_modules
+nlc src/ -o output.nlp
 ```
 
-`nlvm` needs every `.nlm` the program can reach at runtime, not just the
-entry point — pass the whole directory:
+`nlvm` runs the bundle directly:
 
 ```shell
-nlvm nl_modules/
+nlvm output.nlp
 ```
 
 Expected output:

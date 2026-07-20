@@ -20,8 +20,8 @@ what makes each folder a distinct "workspace" here, even though `nlc`
 compiles everything into one program in a single invocation:
 
 ```shell
-nlc src/catalog/*.nl src/warehouse/*.nl src/billing/*.nl src/app/*.nl -o nl_modules
-nlvm nl_modules/*.nlm
+nlc src/catalog/*.nl src/warehouse/*.nl src/billing/*.nl src/app/*.nl -o output.nlp
+nlvm output.nlp
 ```
 
 > Note: NL's `use` syntax supports an `as` alias for resolving name
